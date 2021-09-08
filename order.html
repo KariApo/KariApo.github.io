@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Főmenü</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="order.html">Megrendelés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="contact.html" tabindex="-1">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="about.html">Rólunk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content"></div>
+    <div class="container">
+        <form action="" class="form-control form-control-sm">
+            <div class="row">
+                <div class="col-4">
+                    <h4><span class="badge bg-secondary">Megrendelő adatai</span></h4>
+                    <div class="form-group">
+                        <div class="mb-3 row">
+                            <label for="name" class="form-label">Név</label>
+                            <div class="col-sm-12">
+                                <input class="form-control" type="name" id="name" name="text" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="email">Email cím</label>
+                            <div class="col-sm-12">
+                                <input class="form-control" type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="form-label" for="address">Cím</label>
+                            <div class="col-sm-12">
+                                <input class="form-control" type="text" id="address" name="address" required>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label class="form-label" for="comment">Megjegyzés</label>
+                            <div class="col-sm-12">
+                                <textarea class="form-control" name="comment" id="comment" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h4><span class="badge bg-secondary">Étel kiválasztása</span></h4>
+                    <div class="form-group">
+                        <div class="mb-3 row">
+                            <label class="form-label" for="comment">Választható ételek</label>
+                            <div class="col-sm-12">
+                                <select class="form-select priceRecalc" id="foodSelect" aria-label="Étel kiválasztása">
+                                    <!--                                        
+                                        Ide töltjük fel a kajákat options elemekbe  
+                                    -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3 row">
+                            <label for="amount-input">Mennyiség</label>
+                            <div class="col-sm-12">
+                                <input type="number" name="amount-input" class="form-control" id="topamount" value="1">
+                            </div>
+                            <small class="form-text text-muted">(Minimum 1, maximum 10 rendelhető) </small>
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="amount-input">Választható extrák:</label>
+                        <div class="form-group" id="extraSelectDiv" style="max-height: 100px;overflow: auto;">
+                            <!--
+                            Ide töltjük fel a kiválasztható extrákat
+                        -->
+                        </div>
+                    </div>
+                    <div class="showamount">
+                        Fizetendő: <h2 id="showamount" style='display:inline'>0 </h2> Ft
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="foodToBasket()">Kosárba</button>
+                </div>
+                <div class="col-4">
+                    <h4><span class="badge bg-secondary">Kosár</span></h4>
+                    <small>Házhozszállítás 200 Ft a városban, de 5000 Ft felett ingyenes!</small>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Bootstrap javascripts -->
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <!-- main javascripts-->
+    <script src="js/AppData.js"></script>
+    <script src="js/DataClass.js"></script>
+    <script src="js/ExtraList.js"></script>
+    <script src="js/FoodList.js"></script>
+    <script src="js/order.js"></script>
+
+</body>
+
+</html>

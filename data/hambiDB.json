@@ -1,0 +1,94 @@
+﻿{
+  "foodList": [
+    {
+      "id": 1,
+      "name": "Puszta burger",
+      "price": 890,
+      "description": "",
+      "photo": ""
+    },
+    {
+      "id": 2,
+      "name": "Vegán burger",
+      "price": 910,
+      "description": "",
+      "photo": ""
+    },
+    {
+      "id": 3,
+      "name": "Sajtburger",
+      "price": 850,
+      "description": "",
+      "photo": ""
+    },
+    {
+      "id": 4,
+      "name": "Bacon-burger",
+      "price": 1050,
+      "description": "",
+      "photo": ""
+    },
+    {
+      "id": 5,
+      "name": "Magyaros burger",
+      "price": 900,
+      "description": "",
+      "photo": ""
+    },
+    {
+      "id": 6,
+      "name": "Burger classic",
+      "price": 950,
+      "description": "",
+      "photo": ""
+    },
+    {
+      "id": 7,
+      "name": "Chilis burger",
+      "price": 940,
+      "description": "",
+      "photo": ""
+    }
+  ],
+  "extraList": [
+    {
+      "id": 1,
+      "name": "Extra hagyma",
+      "price": 250
+    },
+    {
+      "id": 2,
+      "name": "Extra sajt",
+      "price": 300
+    },
+    {
+      "id": 3,
+      "name": "Extra fokhagyma",
+      "price": 250
+    },
+    {
+      "id": 4,
+      "name": "Extra chili",
+      "price": 200
+    },
+    {
+      "id": 5,
+      "name": "Majonéz",
+      "price": 200
+    },
+    {
+      "id": 6,
+      "name": "Ketchup",
+      "price": 200
+    },
+    {
+      "id": 7,
+      "name": "Mustár",
+      "price": 150
+    }
+  ],
+  "delivery": {
+    "localCity": "Budapest",
+    "priceOther": 500
+  }
+}

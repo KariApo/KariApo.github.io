@@ -1,0 +1,1 @@
+json-server "w:/_NexusLearning/practice/hamburgeres/data/hambiDB.json"
